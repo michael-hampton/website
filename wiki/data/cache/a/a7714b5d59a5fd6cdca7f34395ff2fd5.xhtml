@@ -1,0 +1,78 @@
+
+<p>
+<strong>Email Servers</strong>
+Easyflow can be configured to send out email to keep its users apprised of new cases in their Inbox and notify them at specified times while running cases. It is possible to create and configure more than one server to send out these emails. This page explains the settings to configure EasyFlow to use the email servers.
+</p>
+
+<p>
+<strong>16.18Creating New Email Server Configurations</strong>
+In the window that opens, first define the email engine that will be used by the email server configured in the “Email Engine” dropdown.
+o
+</p>
+
+<p>
+<strong>SMTP (PHPMailer)</strong>
+This option sends email using the PHPMailer program. Select this option to use an email server which supports the Simple Mail Transport Protocol (SMTP). If your organization does not have its own email server (such as sendmail, postfix, or exim), use an external email service (such as Gmail, Yahoo or Hotmail) which supports SMTP. If using an external email service, check the configuration information below for Hotmail, Yahoo or Gmail, or see this list for the SMTP configuration of other email providers.
+</p>
+
+<p>
+<strong>Mail (PHP)</strong>
+Select this option to use PHP&#039;s mail() function to send the email.
+</p>
+
+<p>
+<strong>16.18.1SMTP (PHP Mailer)</strong>
+If this option has been selected in the “Email Engine” option, fill in the following fields:
+Where:
+</p>
+<ul>
+<li class="level1"><div class="li"> oServer: The IP address or domain name for the email server. For example, “smtp.gmail.com”, “smtp.mail.yahoo.com” or “smtp.example.com”.</div>
+</li>
+<li class="level1"><div class="li"> oPort: The port number used by the email server. Generally port 25 is used, or alternatively port 587. If connecting to the email server with a SSL or TLS connection, generally port 465 is used. If left blank, the default port 25 will be used. (See also the corresponding settings by email provider.)</div>
+</li>
+<li class="level1"><div class="li"> Password The password for the user account.</div>
+</li>
+<li class="level1"><div class="li"> oAccount From: The name of the user account from which emails are sent. Some email servers, such as gmail, require that the account name include the full email address, such as: johndoe@gmail.com</div>
+</li>
+<li class="level1"><div class="li"> oFrom Mail: Mail account with which the email notifications will be sent.</div>
+</li>
+<li class="level1"><div class="li"> oFrom Name:Set the name, from which emails are sent, such as “My Company Admin”. If left blank, then emails will be sent from “ProcessMaker” by default.</div>
+</li>
+<li class="level1"><div class="li"> oUse Secure Connection: Select whether the email requires a secure connection:</div>
+</li>
+<li class="level1"><div class="li"> No: Not a secure connection to the email server.</div>
+</li>
+<li class="level1"><div class="li"> TLS: Select if using Transport Layer Security to connect to the email server.</div>
+</li>
+<li class="level1"><div class="li"> SSL: Select if using Secure Sockets Layer to connect to the email server.</div>
+</li>
+<li class="level1"><div class="li"> o</div>
+</li>
+<li class="level1"><div class="li"> Send a test mail: Check this option to send a test mail. When checked, it displays the Mail to field.</div>
+</li>
+<li class="level1"><div class="li"> o</div>
+</li>
+<li class="level1"><div class="li"> Mail to: Email account to which the “test mail” will be sent.</div>
+</li>
+<li class="level1"><div class="li"> oSet as default configuration: Set this email server as default.</div>
+</li>
+</ul>
+
+<p>
+<strong>16.18.2Mail (PHP)</strong>
+If using Mail (PHP) option, no configuration information needs to be entered, except the type of secure connection.
+</p>
+<ul>
+<li class="level1"><div class="li"> oFrom Mail The email account with which the email notifications will be sent.</div>
+</li>
+<li class="level1"><div class="li"> oFrom Name: Set the name, from which emails are sent, such as “My Company Admin”. If left blank, then emails will be sent from “ProcessMaker” by default.</div>
+</li>
+<li class="level1"><div class="li"> o</div>
+</li>
+<li class="level1"><div class="li"> Send a test mail: Check this option to send a test mail. When checked, it displays the Mail to field.</div>
+</li>
+<li class="level1"><div class="li"> o</div>
+</li>
+<li class="level1"><div class="li"> Mail to: Email account to which the “test mail” will be sent.</div>
+</li>
+</ul>

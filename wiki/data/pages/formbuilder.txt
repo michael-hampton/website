@@ -1,0 +1,2 @@
+The form designer provides you with a simple to use drag-and-drop  environment that allows you to create powerful forms for your business processes without writing code.{{:formbuilder1.png?400|}}
+{{:formbuilder2.png?nolink&400|}}

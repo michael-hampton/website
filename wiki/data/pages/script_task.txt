@@ -1,0 +1,18 @@
+**Script Task**
+
+This type of task allows a trigger to be executed when the flow arrives to that task. Some of the characteristics of a script task are the following:
+  * oWhen the task is ready to start, the engine will execute the script.
+  * oWhen the script is completed, the task will also be completed.
+After adding a script task to the design, configure it by going to its properties to add the code that will be executed.
+
+{{:script.png?nolink&400|}}
+
+In the window that opens, there are two ways to add the trigger that will be executed by the task.
+1.By selecting the trigger from the Title dropdown menu.
+2.The code added to the trigger will be shown in the Code textarea.
+
+
+By creating the trigger directly from the window by clicking on the plus symbol (+).
+1. Add the name of the new trigger and the code in the Code textarea.
+
+Save the configuration of the properties of the task that will execute the trigger when running cases.

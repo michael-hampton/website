@@ -1,0 +1,2 @@
+Gateways are elements used to control how the flows among elements of the design interact. This means, they act like a mechanism that controls, defines and regulates flows based on routing rules set for this purpose. 
+gateways allow processes to be moved to different steps based on a condition. For example if i have a select list with 2 options - Yes and No answering yes will move it to one step whilst answering No would move it to a different step.

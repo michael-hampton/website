@@ -1,0 +1,227 @@
+
+<p>
+<strong>Overview</strong>
+</p>
+
+<p>
+Only people who are registered as users have the right to access EasyFlow. Those users can be organized into groups and departments. The type of activities that users can perform and the interface users see is determined by their roles.
+</p>
+
+<p>
+The Users Tab
+</p>
+
+<p>
+To administer users, groups and departments, log in as the “admin” or another user who has the PM_USERS permission in their role. Then, go to the Users tab in the sidebar under the Admin menu:
+</p>
+<ul>
+<li class="level1"><div class="li"> User: A user account in EasyFlowusually represents a person in the organization, but can also represent an account with special privileges, such as the “admin” account.</div>
+</li>
+<li class="level1"><div class="li"> Groups: Users can be assigned to a group. A group of users simplifies the assignment of users to tasks. For example, a “Help Desk” process may involve a pool of customer support clerks, all belonging to a group named “Customer Support”.</div>
+</li>
+<li class="level1"><div class="li"> Departments: Arranges users under a hierarchical organizational structure. A user can only belong to one department.</div>
+</li>
+<li class="level1"><div class="li"> Roles: Makes it possible to define customized roles with different levels of permissions, so that the functions and privileges of different users can be easily controlled and managed.</div>
+</li>
+</ul>
+
+<h1 class="sectionedit1" id="users">Users</h1>
+<div class="level1">
+
+<p>
+To see the list of users registered in the current workspace, go to Admin &gt; Users &gt; Users.
+</p>
+
+<p>
+<img src="/site/wiki/lib/exe/fetch.php?w=400&amp;tok=1460a5&amp;media=users1.png" class="media" alt="" width="400" />
+</p>
+
+</div>
+<div class="level1">
+
+<p>
+Creating New Users
+</p>
+
+</div>
+<div class="level1">
+
+<p>
+To create a new user inside the EasyFlow interface, go to Admin &gt; Users &gt; Users and click on the New button in the toolbar.
+</p>
+
+<p>
+<img src="/site/wiki/lib/exe/fetch.php?w=400&amp;tok=9b409e&amp;media=user2.png" class="media" alt="" width="400" />
+</p>
+<ul>
+<li class="level1"><div class="li"> First Name: The user&#039;s first name.</div>
+</li>
+<li class="level1"><div class="li"> Last Name: The user&#039;s last name.</div>
+</li>
+<li class="level1"><div class="li"> Username: The account name that will be provided when the user logs into the system. Usernames can contain letters, numbers and underscores. Usernames are not case sensitive when logging in.</div>
+</li>
+<li class="level1"><div class="li"> </div>
+</li>
+<li class="level1"><div class="li"> Note: Usernames can start with a number, such as “01John”.</div>
+</li>
+<li class="level1"><div class="li"> </div>
+</li>
+<li class="level1"><div class="li"> ProcessMaker will verify that the username isn&#039;t already being used by another user:</div>
+</li>
+<li class="level1"><div class="li"> </div>
+</li>
+<li class="level1"><div class="li"> </div>
+</li>
+<li class="level1"><div class="li"> </div>
+</li>
+<li class="level1"><div class="li"> If the username is assigned to another user, a red error message will be displayed:</div>
+</li>
+<li class="level1"><div class="li"> </div>
+</li>
+<li class="level1"><div class="li"> </div>
+</li>
+<li class="level1"><div class="li"> </div>
+</li>
+<li class="level1"><div class="li"> E-mail: The email address of the user, which can be used to deliver e-mail notifications concerning cases.</div>
+</li>
+<li class="level1"><div class="li"> Address:</div>
+</li>
+<li class="level1"><div class="li"> Zip Code:</div>
+</li>
+<li class="level1"><div class="li"> Country: If a country is selected that has a known set of locations, then two extra dropdown boxes will appear for State or Region and Location. For other countries, enter the location information in the Address field.</div>
+</li>
+<li class="level1"><div class="li"> Phone:</div>
+</li>
+<li class="level1"><div class="li"> Position:</div>
+</li>
+<li class="level1"><div class="li"> Replaced by: Choose another user who will replace the user when their status changes to “Inactive” or to “On Vacation” from the dropdown menu. All the cases currently assigned to the user will be reassigned to the replacement user. For more information, see Using Replaced By below.</div>
+</li>
+<li class="level1"><div class="li"> Calendar: Select the user&#039;s calendar, which determines the working hours for the user and calculates the due date for tasks.</div>
+</li>
+<li class="level1"><div class="li"> Expiration date: The date when the user will no longer be allowed to log in to ProcessMaker. The expiration date helps protect an organization&#039;s data by preventing old users from accessing ProcessMaker.</div>
+</li>
+<li class="level1"><div class="li"> Calendar:</div>
+</li>
+<li class="level1"><div class="li"> Status: If set to Active, the user is permitted access to ProcessMaker. If set to Inactive, the user is denied login access and will not be assigned to work on any new cases, until the status is changed back to Active. If set to “Vacation”, then the user&#039;s account will be inactive and will not be assigned to any new cases until the next time that the user logs into ProcessMaker. After logging in, the user will again be available to be assigned to new cases, but the status will still be listed as Vacation. Note that only a user, such as the “admin” who has the PM_USERS permission in their role may change the status of a user.</div>
+</li>
+<li class="level1"><div class="li"> Role: Select the user&#039;s role, which determines what functionality and interfaces the user can access in ProcessMaker. ProcessMaker provides the default roles PROCESSMAKER_OPERATOR, PROCESSMAKER_MANAGER and PROCESSMAKER_ADMIN, but other roles may be created for more customized permissions.</div>
+</li>
+<li class="level1"><div class="li"> Change Password</div>
+</li>
+<li class="level1"><div class="li"> </div>
+</li>
+<li class="level1"><div class="li"> New Password: A string of at least 5 characters, which can include spaces and symbols. If the second password doesn&#039;t match the first password, or the passwords don&#039;t meet the set requirements, then a red error message will appear:</div>
+</li>
+<li class="level1"><div class="li"> </div>
+</li>
+<li class="level1"><div class="li"> Otherwise, if both of the passwords match and the passwords meet the requirements:</div>
+</li>
+<li class="level1"><div class="li"> </div>
+</li>
+<li class="level1"><div class="li"> Confirm Password: A string of at least 5 characters, which can include spaces and symbols. If the second password doesn&#039;t match the first password, or the passwords don&#039;t meet the set requirements, then a red error message will appear:</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT1 SECTION "Users" [1186-4618] -->
+<h1 class="sectionedit2" id="groups">Groups</h1>
+<div class="level1">
+
+<p>
+Groups are a way to organize users and to simplify the assignment of tasks to multiple users. In the Purchase Request example process, the “Initiate task” task can be assigned to the “Employees” group, which would includes everyone in the organization. That way, anyone in the organization is able to start a Purchase Request case. If the organization has two accountants and both are assigned to the “Generate Receipt” task, then an “Accountants” group can be created and assigned to the task rather than assigning each accountant individually. Assigning groups, rather than individual users, will eliminate a lot of hassle for process designers, since it can be difficult to remember to include every individual user when assigning tasks.
+</p>
+
+<p>
+<img src="/site/wiki/lib/exe/fetch.php?w=400&amp;tok=c1ed31&amp;media=team1.png" class="media" alt="" width="400" />
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Groups" [4619-5410] -->
+<h1 class="sectionedit3" id="creating_groups">Creating Groups</h1>
+<div class="level1">
+
+<p>
+To see the list of groups, go to Admin &gt; Users &gt; Groups.
+</p>
+
+<p>
+To create a new group, click on the New link at the top left of the list of groups. In the dialog box, enter the name of the new group.
+<img src="/site/wiki/lib/exe/fetch.php?w=400&amp;tok=bd28e5&amp;media=team2.png" class="media" alt="" width="400" />
+</p>
+
+<p>
+After creating a group, it will appear in the list of groups.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Creating Groups" [5411-5727] -->
+<h1 class="sectionedit4" id="assigning_users_to_groups">Assigning Users to Groups</h1>
+<div class="level1">
+
+<p>
+A user account can belong to a group, and groups can have multiple users. In other words, many groups may be assigned to many users. The Users column displays how many users are assigned to a group, and the Tasks column shows how many tasks the group has been assigned to.
+</p>
+
+<p>
+To add a user to group, first select the group in the list. Then, click on the Users button at the top of the list. A new window will appear:
+</p>
+
+<p>
+<img src="/site/wiki/lib/exe/fetch.php?w=400&amp;tok=75adc4&amp;media=teams3.png" class="media" alt="" width="400" />
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Assigning Users to Groups" [5728-6214] -->
+<h1 class="sectionedit5" id="departments">Departments</h1>
+<div class="level1">
+
+<p>
+<img src="/site/wiki/lib/exe/fetch.php?w=400&amp;tok=188da9&amp;media=departments1.png" class="media" alt="" width="400" />
+</p>
+
+<p>
+Departments are another way to organize users based on an hierarchical organization that determines the manner and extent to which roles and responsibilities are delegated, controlled, and coordinated, as well as how information flows between levels of hierarchy in a company. In ProcessMaker, departments should represent the units in the organization, and the employees of each entity (that will work in processes of the company) should be assigned to these departments. Creating the departments and setting the managers (optional) for each department will indicate to who employees should report to when submitting information that needs revision or approval from a supervisor according to the hierarchical organization of the company.
+</p>
+
+<p>
+To manage departments log in to ProcessMaker with a user, such as the “admin”, who has the PM_USERS permission in their role. Then go to Admin &gt; Users &gt; Departments to see a list of the departments and the number of users assigned to them.
+</p>
+
+<p>
+For departments, take into account the following:
+</p>
+<ul>
+<li class="level1"><div class="li"> Users can only be assigned to one department, unlike groups where users can be assigned to one or more groups.</div>
+</li>
+<li class="level1"><div class="li"> Departments can not be assigned to tasks in their assignment rules.</div>
+</li>
+<li class="level1"><div class="li"> Processes in ProcessMaker work with departments in the assignment of the next task using the “Reports To” assignment method. In this method the next task is assigned to the immediate supervisor of the employee that worked the last task.</div>
+</li>
+<li class="level1"><div class="li"> The manager of a department is automatically set in the Reports to field for all the other users in the department. If the department is a top-level department (meaning that it has no parent department), then the Reports to field for the manager will be left blank. If the department has a parent department, then the manager&#039;s Reports to field will be set to the manager of the parent department.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Departments" [6215-8139] -->
+<h1 class="sectionedit6" id="creating_a_new_department">Creating a New Department</h1>
+<div class="level1">
+
+<p>
+To create a new department, click on the New button. Enter the name of the new department and click on Save.
+</p>
+
+<p>
+<img src="/site/wiki/lib/exe/fetch.php?w=400&amp;tok=d079eb&amp;media=department2.png" class="media" alt="" width="400" />
+</p>
+
+</div>
+<!-- EDIT6 SECTION "Creating a New Department" [8140-8324] -->
+<h1 class="sectionedit7" id="assigning_users">Assigning Users</h1>
+<div class="level1">
+
+<p>
+To assign users to a department, go to Admin &gt; Users &gt; Departments to view the list of departments. Select a department and click on Users. The list of already assigned users will display in the window that opens:
+</p>
+
+</div>
+<!-- EDIT7 SECTION "Assigning Users" [8325-] -->

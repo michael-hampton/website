@@ -1,0 +1,5 @@
+**Notifications**
+
+Notifications can be set up for each step. The user can choose from a list of placeholders if they want to have dynamic fields in the notification.
+
+{{:notification.png?nolink&400|}}

@@ -1,0 +1,23 @@
+16.1.1Receive Message
+This type of start event is also supported by the Easyflow engine. Use this event when a message, sent by another process, contains data that triggers the start the current process flow. Inside Easyflow, this event receives messages from the Send Message Intermediate Event and the Message End Event.
+
+{{:receive.png?nolink&400|}}
+
+  * oMessage Type: Select a previously created Message Type from the dropdown menu. The message type selected in this field will define the input variables needed to start the first task of the process. The event that will send the message must have the same message type defined inside its configuration, so when the first process arrives at this event, it will send the value of the variables to the start event that will trigger the first task.
+  * oStore Value In: In this column, define the fields in the current task that will store the value field messages sent from the other process.
+  * oName Value: This column shows the name of the message field used to store the value of the message sent from the other process. Take into account that these values are not variables used by the first process inside its forms, triggers, input or output documents. These variables are used exclusively by the message between the processes (which means that the sending event should define the variables that will be sent in the message in its properties as well).
+  * oCorrelation Value: The correlation value defines the unique ID that will relate both events: the send message event and the receive message event.
+  * This value must be the same in both events. The correlation value must be either a fixed value, such as correlation = 62521362355f06c223f95d8008656248 (for example),
+
+**16.1.1.1Send Message**
+Use this type of event in the process design to send a message during the execution of the process to another process that requires the message. The message will be caught using a receive message intermediate event or a receive message start event. 
+The message must have already been created with the Message Types option
+
+{{:send.png?nolink&400|}}
+
+  * oMessage Type: Select the message type from the dropdown menu that will be related to the send message event. The message type selected in this field will define the variables sent to the other process. The event that will receive the message must have the same message type defined inside its configuration.
+  * oName: This column shows the name of the message field used to store the value of the message that will be sent to the other process. Take into account that these values are not variables used by the process inside its forms, triggers, input or output documents. These variables are used exclusively by the message between the events.
+  * oGet Value from: In this column, define the variables used in the process where the values will be obtained and used by the message that will be sent to the other process.
+  * oCorrelation Value:
+  * Define the unique ID that will relate both events: the send message intermediate event and the receive message intermediate event or message start event.
+  * This value must be the same in both events. The correlation value must be either a fixed value, such as id = 123 (for example),

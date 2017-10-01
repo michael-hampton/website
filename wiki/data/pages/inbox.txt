@@ -1,0 +1,17 @@
+**Cases Inbox**
+
+The inbox only shows the latest notification for a case. Notifications are usually sent at the end of a step (when a step moves on). Once the next step has been moved the current inbox message will be moved to the drafts folder and a new message for the new step will be placed in the inbox.
+
+{{:inbox1.png?nolink&400|}}
+
+Cases can be filtered on by their status.
+
+{{:inbox2.png?nolink&400|}}
+
+The advanced search allows the user to search for cases using various filters.
+
+{{:inbox3.png?nolink&400|}}
+
+Cases are created against workflows. Workflows can be grouped by category. The list displays all workflows and allows the users to search.
+
+{{:inbox4.png?nolink&400|}}

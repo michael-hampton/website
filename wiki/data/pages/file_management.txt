@@ -1,0 +1,4 @@
+**Document / File Management
+**The system also comes with its own file manager. This allows users to manage directories (rename. copy, remove and create directories) and to manage files (rename. copy, remove, upload, download).
+
+{{:document.png?nolink&400|}}

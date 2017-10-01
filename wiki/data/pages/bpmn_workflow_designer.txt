@@ -1,0 +1,5 @@
+**BPMN Workflow Designer**
+
+The BPMN designer use Buisness Process Notation to design and build workflows. Conditions can be built into the process using the various icons. See Below.
+
+{{:designer.png?nolink&400|}}

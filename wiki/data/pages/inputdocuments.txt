@@ -1,0 +1,6 @@
+Input Documents
+Input documents are documents that are uploaded within a step. Creating an input document allows the user to state what files hes expecting and what the rules are for the uploaded files (eg size, format). There is also a built in versioning system so that if the document already exists it will create a new version of it rather than overwriting it.
+Files outside of a step which belong to a case can be uploaded as usual.
+
+{{:input1.png?nolink&400|}}
+{{:input2.png?nolink&400|}}

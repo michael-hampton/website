@@ -1,0 +1,28 @@
+**Timer Start Event**
+The Timer start event automatically starts new cases at specified times. These cases can be programmed to be started on an hourly, daily, weekly or monthly basis, or one time only.
+A process containing a Timer start event must have at least one task. The first task after a Timer start event needs to be assigned to at least one user. Timer start events do not work correctly if the initial task is a script task.
+
+{{:timer.png?nolink&400|}}
+
+Select how often the case will be started:
+  * oHourly: A case will be created on an hourly basis. Enter the minutes of the hour when a new case will be started. For example, 20 means a new case will be started twenty minutes after every hour in the day. Also define the Start Date when new cases will start being created. If new cases should stop being created after a specified date, then enter the optional End Date.
+  * oDaily: A new case will automatically be started on a daily basis. 
+  * Start Date: Select the date when new cases will start to be created.
+  * End Date: Select a date when new cases will stop being created. If no date is selected, then new cases will be created forever.
+  * Hour: Select the hour when the new case will start.
+  * Minute: Select the minute of the hour when the new case will start.
+  * Select the day(s) of the week: Select the days of the week when new cases will automatically start.
+  * oMonthly: A new case will automatically be started on a montly basis. 
+  * Start Date: Select the date when a new case will be scheduled to start every month.
+  * End Date: Select the date when cases will stop being scheduled. If no date is selected, then cases will continue being scheduled forever.
+  * Day: Select the day when the case will start. Days are represented in numbers where 1 corresponds to Monday.
+  * Hour: Select the hour when the case will start.
+  * Minute: Select the minute when the case will start.
+  * Of the month(s): Select in which months cases will be automatically started.
+  * oOne date/time: A case will be automatically started only once on a particular date or time.
+  * o
+
+16.1.2.1Intermediate Timer Event
+The intermediate timer event causes a delay in a flow depending on the time defined in the configuration of the process. This event is a "catching" event since it must wait for a specified time to trigger and continue the flow. .
+  * oWait for: Select the number of minutes, hours, or days the flow must wait. At least one of these fields must be selected (minute, hour or day). The wait status begins when the flow arrives at the intermediate timer event.
+  * oWait until the specific date/time: Select a specific date and time the flow must wait until.

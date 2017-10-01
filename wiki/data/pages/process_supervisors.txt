@@ -1,0 +1,13 @@
+Process supervisors are users who have special privileges to oversee and review the cases of a particular project. Often the manager or department head in an organization will be assigned as a process supervisor. 
+Process managers have special privileges to do actions such as
+  *  reject
+  * abandon
+  *  hold 
+  * review a case if it has failed validation rules. 
+Process management rights can be assigned to teams or users.
+
+{{:supervisor.png?nolink&400|}}
+
+Normal users can also be given permissions within a step  which means they can fill in a form and save/complete but cant do any of the above. There is also the ability for a user to claim a step if this has been set up as a condition. This means that anyone can claim a step and work on it.
+
+{{:permissions.png?nolink&400|}}

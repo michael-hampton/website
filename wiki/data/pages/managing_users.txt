@@ -1,0 +1,107 @@
+**Overview**
+
+Only people who are registered as users have the right to access EasyFlow. Those users can be organized into groups and departments. The type of activities that users can perform and the interface users see is determined by their roles.
+
+The Users Tab
+
+To administer users, groups and departments, log in as the "admin" or another user who has the PM_USERS permission in their role. Then, go to the Users tab in the sidebar under the Admin menu:
+
+  * User: A user account in EasyFlowusually represents a person in the organization, but can also represent an account with special privileges, such as the "admin" account.
+  * Groups: Users can be assigned to a group. A group of users simplifies the assignment of users to tasks. For example, a "Help Desk" process may involve a pool of customer support clerks, all belonging to a group named "Customer Support".
+  * Departments: Arranges users under a hierarchical organizational structure. A user can only belong to one department.
+  * Roles: Makes it possible to define customized roles with different levels of permissions, so that the functions and privileges of different users can be easily controlled and managed.
+
+====== Users ======
+
+To see the list of users registered in the current workspace, go to Admin > Users > Users.
+
+{{:users1.png?nolink&400|}}
+====== 
+Creating New Users ======
+
+To create a new user inside the EasyFlow interface, go to Admin > Users > Users and click on the New button in the toolbar.
+
+{{:user2.png?nolink&400|}}
+
+  * First Name: The user's first name.
+  * Last Name: The user's last name.
+  * Username: The account name that will be provided when the user logs into the system. Usernames can contain letters, numbers and underscores. Usernames are not case sensitive when logging in.
+  * 
+  * Note: Usernames can start with a number, such as "01John".
+  * 
+  * ProcessMaker will verify that the username isn't already being used by another user:
+  * 
+  * 
+  * 
+  * If the username is assigned to another user, a red error message will be displayed:
+  * 
+  * 
+  * 
+  * E-mail: The email address of the user, which can be used to deliver e-mail notifications concerning cases.
+  * Address:
+  * Zip Code:
+  * Country: If a country is selected that has a known set of locations, then two extra dropdown boxes will appear for State or Region and Location. For other countries, enter the location information in the Address field.
+  * Phone:
+  * Position:
+  * Replaced by: Choose another user who will replace the user when their status changes to "Inactive" or to "On Vacation" from the dropdown menu. All the cases currently assigned to the user will be reassigned to the replacement user. For more information, see Using Replaced By below.
+  * Calendar: Select the user's calendar, which determines the working hours for the user and calculates the due date for tasks.
+  * Expiration date: The date when the user will no longer be allowed to log in to ProcessMaker. The expiration date helps protect an organization's data by preventing old users from accessing ProcessMaker.
+  * Calendar:
+  * Status: If set to Active, the user is permitted access to ProcessMaker. If set to Inactive, the user is denied login access and will not be assigned to work on any new cases, until the status is changed back to Active. If set to "Vacation", then the user's account will be inactive and will not be assigned to any new cases until the next time that the user logs into ProcessMaker. After logging in, the user will again be available to be assigned to new cases, but the status will still be listed as Vacation. Note that only a user, such as the "admin" who has the PM_USERS permission in their role may change the status of a user.
+  * Role: Select the user's role, which determines what functionality and interfaces the user can access in ProcessMaker. ProcessMaker provides the default roles PROCESSMAKER_OPERATOR, PROCESSMAKER_MANAGER and PROCESSMAKER_ADMIN, but other roles may be created for more customized permissions.
+  * Change Password
+  * 
+  * New Password: A string of at least 5 characters, which can include spaces and symbols. If the second password doesn't match the first password, or the passwords don't meet the set requirements, then a red error message will appear:
+  * 
+  * Otherwise, if both of the passwords match and the passwords meet the requirements:
+  * 
+  * Confirm Password: A string of at least 5 characters, which can include spaces and symbols. If the second password doesn't match the first password, or the passwords don't meet the set requirements, then a red error message will appear:
+
+====== Groups ======
+
+Groups are a way to organize users and to simplify the assignment of tasks to multiple users. In the Purchase Request example process, the "Initiate task" task can be assigned to the "Employees" group, which would includes everyone in the organization. That way, anyone in the organization is able to start a Purchase Request case. If the organization has two accountants and both are assigned to the "Generate Receipt" task, then an "Accountants" group can be created and assigned to the task rather than assigning each accountant individually. Assigning groups, rather than individual users, will eliminate a lot of hassle for process designers, since it can be difficult to remember to include every individual user when assigning tasks.
+
+{{:team1.png?nolink&400|}}
+
+====== Creating Groups ======
+
+To see the list of groups, go to Admin > Users > Groups.
+
+To create a new group, click on the New link at the top left of the list of groups. In the dialog box, enter the name of the new group.
+{{:team2.png?nolink&400|}}
+
+
+After creating a group, it will appear in the list of groups.
+
+====== Assigning Users to Groups ======
+
+A user account can belong to a group, and groups can have multiple users. In other words, many groups may be assigned to many users. The Users column displays how many users are assigned to a group, and the Tasks column shows how many tasks the group has been assigned to.
+
+To add a user to group, first select the group in the list. Then, click on the Users button at the top of the list. A new window will appear:
+
+{{:teams3.png?nolink&400|}}
+
+====== Departments ======
+
+{{:departments1.png?nolink&400|}}
+
+Departments are another way to organize users based on an hierarchical organization that determines the manner and extent to which roles and responsibilities are delegated, controlled, and coordinated, as well as how information flows between levels of hierarchy in a company. In ProcessMaker, departments should represent the units in the organization, and the employees of each entity (that will work in processes of the company) should be assigned to these departments. Creating the departments and setting the managers (optional) for each department will indicate to who employees should report to when submitting information that needs revision or approval from a supervisor according to the hierarchical organization of the company.
+
+To manage departments log in to ProcessMaker with a user, such as the "admin", who has the PM_USERS permission in their role. Then go to Admin > Users > Departments to see a list of the departments and the number of users assigned to them.
+
+For departments, take into account the following:
+
+  * Users can only be assigned to one department, unlike groups where users can be assigned to one or more groups.
+  * Departments can not be assigned to tasks in their assignment rules.
+  * Processes in ProcessMaker work with departments in the assignment of the next task using the "Reports To" assignment method. In this method the next task is assigned to the immediate supervisor of the employee that worked the last task.
+  * The manager of a department is automatically set in the Reports to field for all the other users in the department. If the department is a top-level department (meaning that it has no parent department), then the Reports to field for the manager will be left blank. If the department has a parent department, then the manager's Reports to field will be set to the manager of the parent department.
+
+====== Creating a New Department ======
+
+To create a new department, click on the New button. Enter the name of the new department and click on Save.
+
+{{:department2.png?nolink&400|}}
+
+====== Assigning Users ======
+
+To assign users to a department, go to Admin > Users > Departments to view the list of departments. Select a department and click on Users. The list of already assigned users will display in the window that opens:
