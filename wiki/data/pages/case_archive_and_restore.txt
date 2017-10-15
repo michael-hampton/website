@@ -1,0 +1,6 @@
+**Case Archive and Restore
+**
+
+Sometimes when we are working on data intensive systems database can become large and consequently become sluggish resulting in the applications overall speed and efficiency being decreased. Once cases have been completed it may not be necessary to store them in the database and they can therefore be archived. By archiving old cases we are reducing the overhead and redundancy on our databases. The information stored within archived cases is still visible and can be restored if needed.
+
+{{:archive.png?nolink&400|}}

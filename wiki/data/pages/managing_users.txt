@@ -29,7 +29,7 @@ To create a new user inside the EasyFlow interface, go to Admin > Users > Users 
   * 
   * Note: Usernames can start with a number, such as "01John".
   * 
-  * ProcessMaker will verify that the username isn't already being used by another user:
+  * EasyFlow will check that the username isn't already being used by another user:
   * 
   * 
   * 
@@ -45,10 +45,9 @@ To create a new user inside the EasyFlow interface, go to Admin > Users > Users 
   * Position:
   * Replaced by: Choose another user who will replace the user when their status changes to "Inactive" or to "On Vacation" from the dropdown menu. All the cases currently assigned to the user will be reassigned to the replacement user. For more information, see Using Replaced By below.
   * Calendar: Select the user's calendar, which determines the working hours for the user and calculates the due date for tasks.
-  * Expiration date: The date when the user will no longer be allowed to log in to ProcessMaker. The expiration date helps protect an organization's data by preventing old users from accessing ProcessMaker.
   * Calendar:
-  * Status: If set to Active, the user is permitted access to ProcessMaker. If set to Inactive, the user is denied login access and will not be assigned to work on any new cases, until the status is changed back to Active. If set to "Vacation", then the user's account will be inactive and will not be assigned to any new cases until the next time that the user logs into ProcessMaker. After logging in, the user will again be available to be assigned to new cases, but the status will still be listed as Vacation. Note that only a user, such as the "admin" who has the PM_USERS permission in their role may change the status of a user.
-  * Role: Select the user's role, which determines what functionality and interfaces the user can access in ProcessMaker. ProcessMaker provides the default roles PROCESSMAKER_OPERATOR, PROCESSMAKER_MANAGER and PROCESSMAKER_ADMIN, but other roles may be created for more customized permissions.
+  * Status: If set to Active, the user is permitted access to EasyFlow. If set to Inactive, the user is denied login access and will not be assigned to work on any new cases, until the status is changed back to Active. If set to "Vacation", then the user's account will be inactive and will not be assigned to any new cases until the next time that the user logs into EasyFlow. After logging in, the user will again be available to be assigned to new cases, but the status will still be listed as Vacation. Note that only a user, such as the "admin" who has the EASYFLOW_USERS permission in their role may change the status of a user.
+  * Role: Select the user's role, which determines what functionality and interfaces the user can access in EasyFlow. EasyFlowprovides the default roles EF_OPERATOR, EF_MANAGER and EF_ADMIN, but other roles may be created for more customized permissions.
   * Change Password
   * 
   * New Password: A string of at least 5 characters, which can include spaces and symbols. If the second password doesn't match the first password, or the passwords don't meet the set requirements, then a red error message will appear:
@@ -85,16 +84,15 @@ To add a user to group, first select the group in the list. Then, click on the U
 
 {{:departments1.png?nolink&400|}}
 
-Departments are another way to organize users based on an hierarchical organization that determines the manner and extent to which roles and responsibilities are delegated, controlled, and coordinated, as well as how information flows between levels of hierarchy in a company. In ProcessMaker, departments should represent the units in the organization, and the employees of each entity (that will work in processes of the company) should be assigned to these departments. Creating the departments and setting the managers (optional) for each department will indicate to who employees should report to when submitting information that needs revision or approval from a supervisor according to the hierarchical organization of the company.
+Departments are another way to organize users based on an hierarchical organization that determines the manner and extent to which roles and responsibilities are delegated, controlled, and coordinated, as well as how information flows between levels of hierarchy in a company. In EasyFlow, departments should represent the units in the organization, and the employees of each entity (that will work in processes of the company) should be assigned to these departments. Creating the departments and setting the managers (optional) for each department will indicate to who employees should report to when submitting information that needs revision or approval from a supervisor according to the hierarchical organization of the company.
 
-To manage departments log in to ProcessMaker with a user, such as the "admin", who has the PM_USERS permission in their role. Then go to Admin > Users > Departments to see a list of the departments and the number of users assigned to them.
+To manage departments go to to user admin screen and click on the department tab
 
 For departments, take into account the following:
 
-  * Users can only be assigned to one department, unlike groups where users can be assigned to one or more groups.
-  * Departments can not be assigned to tasks in their assignment rules.
-  * Processes in ProcessMaker work with departments in the assignment of the next task using the "Reports To" assignment method. In this method the next task is assigned to the immediate supervisor of the employee that worked the last task.
-  * The manager of a department is automatically set in the Reports to field for all the other users in the department. If the department is a top-level department (meaning that it has no parent department), then the Reports to field for the manager will be left blank. If the department has a parent department, then the manager's Reports to field will be set to the manager of the parent department.
+  * Users can only be assigned to one department.
+  * Departments can not be assigned to tasks.
+  * If a step fails validation then the department manager will have to approve the step.
 
 ====== Creating a New Department ======
 

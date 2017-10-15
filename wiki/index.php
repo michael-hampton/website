@@ -13,6 +13,7 @@
  * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
  * @author     Andreas Gohr <andi@splitbrain.org>
  */
+
 if(php_sapi_name() != 'cli-server') {
     header("Location: doku.php");
     exit;

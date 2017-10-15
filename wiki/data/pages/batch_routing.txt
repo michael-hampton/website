@@ -1,0 +1,5 @@
+**Batch Routing**__Underlined Text__
+
+Batch Routing allows multiple cases to be selected from the case list and moved to the next task in the process simultaneously.
+
+{{:batchrouting.png?nolink&400|}}

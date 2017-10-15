@@ -8,38 +8,41 @@ It is possible to see the list of Output Documents created in the process. Click
 
 {{:output1.png?nolink&400|}}
 
-16.14Creating Output Documents
+**Creating Output Documents**
 To create output documents, click the Create button. 
 
 {{:output2.png?nolink&400|}}
 
-  * oTitle: Adds a title that identifies the output document.
-  * oFilename generated: The filename to be generated when an output document is created when running cases. Note that paths cannot be included in the filename, since output documents are stored in a standard location in the file system.
-  * oDescription: A small description about the document, which should inform the user about the general content or purpose of the document.
-  * oReport Generator: Choose the engine that will generate the output documents. 
-  * oMedia: Select the paper size:
+  * Title: Adds a title that identifies the output document.
+  * Filename generated: The filename to be generated when an output document is created when running cases. Note that paths cannot be included in the filename, since output documents are stored in a standard location in the file system.
+  * Description: A small description about the document.
+  * Report Generator: Choose the engine that will generate the output documents. 
+  * Media: Select the paper size:
 
-  * oLeft: Size of the paper's left margin in mm.
-  * oRight: Size of the paper's right margin in mm.
-  * oTop: Size of the paper's top margin in mm.
-  * oBottom: Size of the paper's bottom margin in mm.
-  * oOutput Document to Generate: Select whether the output document will be generated in DOC, PDF, or BOTH formats.
-  * oPDF Security: An option that allows passwords to be set for the generated PDF document and restricts how it may be used. Select one of the following options:
-  * Disabled: Default. No security will be applied to the generated PDF document.
-  * Enabled: If selected, the following security options are displayed:
-  * oOpen Password:聽Define a password to open the PDF document.
-  * oOwner Password:聽Define a password to change the PDF document's permissions.
-  * oAllowed Permissions:聽Select how the PDF document may be used. To select more than one option, hold down on the CTRL key while clicking the following options:
-  * oPrint: The document can be printed.
-  * oModify: The document can be edited.
-  * oCopy: The document can be copied.
-  * oForms: The fields in the document may be filled in.
-  * oEnable Versioning:聽Presents a dropdown with two options, which are "Yes" and "No". If "Yes" is chosen, then ProcessMaker will keep multiple versions of the output document. Versioning is useful if the same output document is created at multiple steps in a case. This option allows a record to be kept of how the document's data changes over the course of a case, which is useful for maintaining audit trails.
-  * oDestination Path: Enter the name of the folder where the output document should be stored.
-  * oTags: Enter the name of the identifying tag(s) that will be associated with this output document. To specify more than one tag name, separate each tag name with commas.  Tags are really useful when looking for output documents in the ProcessMaker database.
+  * Left: Size of the paper's left margin in mm.
+  * Right: Size of the paper's right margin in mm.
+  * Top: Size of the paper's top margin in mm.
+  * Bottom: Size of the paper's bottom margin in mm.
+
+  * Output Document to Generate: Select whether the output document will be generated in DOC, PDF, or BOTH formats.
+  * PDF Security: An option that allows passwords to be set for the generated PDF document and restricts how it may be used. Select one of the following options:
+  * Disabled: Default. No security will be applied to the generated PDF document.
+  * Enabled: If selected, the following security options are displayed:
+  * Open Password:聽Define a password to open the PDF document.
+  * Owner Password:聽Define a password to change the PDF document's permissions.
+  * Allowed Permissions:聽Select how the PDF document may be used. To select more than one option, hold down on the CTRL key while clicking the following options:
+  * Print: The document can be printed.
+  * Modify: The document can be edited.
+  * Copy: The document can be copied.
+  * Forms: The fields in the document may be filled in.
+
+  * Enable Versioning:聽Presents a dropdown with two options, which are "Yes" and "No". If "Yes" is chosen, then ProcessMaker will keep multiple versions of the output document. Versioning is useful if the same output document is created at multiple steps in a case. This option allows a record to be kept of how the document's data changes over the course of a case, which is useful for maintaining audit trails.
+
+  * Destination Path: Enter the name of the folder where the output document should be stored.
+  * Tags: Enter the name of the identifying tag(s) that will be associated with this output document. To specify more than one tag name, separate each tag name with commas.  Tags are really useful when looking for output documents in the ProcessMaker database.
   * oBy clicking on the generated file link: Select whether the file will be downloaded or opened in the browser window.
-  * Download the file:Download the file directly to the local computer. By choosing this option, the browser will automatically download the file. This is the recommended option when creating output documents.
-  * Open the file:Open the file in the browser window.
+  * Download the file:Download the file directly to the local computer. By choosing this option, the browser will automatically download the file. This is the recommended option when creating output documents.
+  * Open the file:Open the file in the browser window.
 
 **Editing Templates**
 To edit the template of an output document click on Output Documents tab. A list of all the templates created for the process will appear there. Select the output document that needs to have its content edited and click on the Open Editor button. A new window will open where the document can be changed and corrected in any way that the user wants. Once the document is formatted, click on the Save button and a quick message will appear telling the user that all changes made were saved.

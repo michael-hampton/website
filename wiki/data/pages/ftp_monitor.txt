@@ -1,0 +1,7 @@
+**FTP Monitor**
+
+The FTP Monitor connects to a specified FTP Server and downloads CSV files from a given directory. 
+
+Each CSV file will contain the required information required to complete the task (as if the user was filling out a form)
+
+For each valid csv file found a new case will be created and will be routed to the second task of the process. The file is stored in the new case as an input document. The FTP monitor will connect and download each time the cron job is run.

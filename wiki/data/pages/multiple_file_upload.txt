@@ -1,0 +1,5 @@
+**Multiple File Uploader**
+
+The Multiple File Uploader allows multiple files to be uploaded simultaneously and attached to a case. To select and upload files, click on the Add Files. A window will appear which will allow you to select multiple files. After being selected, a preview of each selected file will be displayed on the screen.You can upload each file individually or upload all files together. A progress bar for each file being uploaded will be shown. 
+
+{{:multiple.png?nolink&400|}}

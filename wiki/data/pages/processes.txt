@@ -1,24 +1,25 @@
+**Processes/Workflows**
+
+A Process is a group of tasks which in most cases must be completed sequentially. Each task can contain multiple steps (Input Documents, Output Documents and Forms). Once the last task in the process has been completed that workflow will also be completed.
+
 ====== Creating a Process ======
 
 Enter a name, description and select a Category for the new process and click on Create.
-
-
 
 Where:
 
 Title: Title of the process.
 Description: brief description of what is the process about.
 Category: choose a category to which the process will belong.
-When the process has been created, it will redirect automatically to the Process Map to start creating it.
 
-Note: It is possible to have several processes all together in a map. To run each one of them don't forget to assign a user to the initial task.
+{{:process2.png?nolink&400|}}
+
+Note: It is possible to have several workflows linked together.
 
 ====== Editing a Process ======
 
 
-This option allows users to modify process information. Right-click on the Process Map and then click on Edit Process, the following window will display:
-
-
+This option allows users to modify process information.
 
 **Title
 **
@@ -32,13 +33,11 @@ Fill this with a brief description of what is the process about.
 
 Select a Calendar from the list, which indicates the hours and days when users are expected to be at work. You can create your own calendar depending on the work hours.
 
-
-
 **Process Category**
 
 Select one Category from the list which will identify the process. You can create your own category.
 
-Dynaform to show a Case Summary
+Form to show a Case Summary
 
-From the list, choose the Dynaform which information will appear on the Case Summary.
+From the list, choose the form which information will appear on the Case Summary.
 

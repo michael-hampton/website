@@ -66,7 +66,7 @@ To create a new user inside the EasyFlow interface, go to Admin &gt; Users &gt; 
 </li>
 <li class="level1"><div class="li"> </div>
 </li>
-<li class="level1"><div class="li"> ProcessMaker will verify that the username isn&#039;t already being used by another user:</div>
+<li class="level1"><div class="li"> EasyFlow will check that the username isn&#039;t already being used by another user:</div>
 </li>
 <li class="level1"><div class="li"> </div>
 </li>
@@ -98,13 +98,11 @@ To create a new user inside the EasyFlow interface, go to Admin &gt; Users &gt; 
 </li>
 <li class="level1"><div class="li"> Calendar: Select the user&#039;s calendar, which determines the working hours for the user and calculates the due date for tasks.</div>
 </li>
-<li class="level1"><div class="li"> Expiration date: The date when the user will no longer be allowed to log in to ProcessMaker. The expiration date helps protect an organization&#039;s data by preventing old users from accessing ProcessMaker.</div>
-</li>
 <li class="level1"><div class="li"> Calendar:</div>
 </li>
-<li class="level1"><div class="li"> Status: If set to Active, the user is permitted access to ProcessMaker. If set to Inactive, the user is denied login access and will not be assigned to work on any new cases, until the status is changed back to Active. If set to “Vacation”, then the user&#039;s account will be inactive and will not be assigned to any new cases until the next time that the user logs into ProcessMaker. After logging in, the user will again be available to be assigned to new cases, but the status will still be listed as Vacation. Note that only a user, such as the “admin” who has the PM_USERS permission in their role may change the status of a user.</div>
+<li class="level1"><div class="li"> Status: If set to Active, the user is permitted access to EasyFlow. If set to Inactive, the user is denied login access and will not be assigned to work on any new cases, until the status is changed back to Active. If set to “Vacation”, then the user&#039;s account will be inactive and will not be assigned to any new cases until the next time that the user logs into EasyFlow. After logging in, the user will again be available to be assigned to new cases, but the status will still be listed as Vacation. Note that only a user, such as the “admin” who has the EASYFLOW_USERS permission in their role may change the status of a user.</div>
 </li>
-<li class="level1"><div class="li"> Role: Select the user&#039;s role, which determines what functionality and interfaces the user can access in ProcessMaker. ProcessMaker provides the default roles PROCESSMAKER_OPERATOR, PROCESSMAKER_MANAGER and PROCESSMAKER_ADMIN, but other roles may be created for more customized permissions.</div>
+<li class="level1"><div class="li"> Role: Select the user&#039;s role, which determines what functionality and interfaces the user can access in EasyFlow. EasyFlowprovides the default roles EF_OPERATOR, EF_MANAGER and EF_ADMIN, but other roles may be created for more customized permissions.</div>
 </li>
 <li class="level1"><div class="li"> Change Password</div>
 </li>
@@ -123,7 +121,7 @@ To create a new user inside the EasyFlow interface, go to Admin &gt; Users &gt; 
 </ul>
 
 </div>
-<!-- EDIT1 SECTION "Users" [1186-4618] -->
+<!-- EDIT1 SECTION "Users" [1186-4365] -->
 <h1 class="sectionedit2" id="groups">Groups</h1>
 <div class="level1">
 
@@ -136,7 +134,7 @@ Groups are a way to organize users and to simplify the assignment of tasks to mu
 </p>
 
 </div>
-<!-- EDIT2 SECTION "Groups" [4619-5410] -->
+<!-- EDIT2 SECTION "Groups" [4366-5157] -->
 <h1 class="sectionedit3" id="creating_groups">Creating Groups</h1>
 <div class="level1">
 
@@ -154,7 +152,7 @@ After creating a group, it will appear in the list of groups.
 </p>
 
 </div>
-<!-- EDIT3 SECTION "Creating Groups" [5411-5727] -->
+<!-- EDIT3 SECTION "Creating Groups" [5158-5474] -->
 <h1 class="sectionedit4" id="assigning_users_to_groups">Assigning Users to Groups</h1>
 <div class="level1">
 
@@ -171,7 +169,7 @@ To add a user to group, first select the group in the list. Then, click on the U
 </p>
 
 </div>
-<!-- EDIT4 SECTION "Assigning Users to Groups" [5728-6214] -->
+<!-- EDIT4 SECTION "Assigning Users to Groups" [5475-5961] -->
 <h1 class="sectionedit5" id="departments">Departments</h1>
 <div class="level1">
 
@@ -180,29 +178,27 @@ To add a user to group, first select the group in the list. Then, click on the U
 </p>
 
 <p>
-Departments are another way to organize users based on an hierarchical organization that determines the manner and extent to which roles and responsibilities are delegated, controlled, and coordinated, as well as how information flows between levels of hierarchy in a company. In ProcessMaker, departments should represent the units in the organization, and the employees of each entity (that will work in processes of the company) should be assigned to these departments. Creating the departments and setting the managers (optional) for each department will indicate to who employees should report to when submitting information that needs revision or approval from a supervisor according to the hierarchical organization of the company.
+Departments are another way to organize users based on an hierarchical organization that determines the manner and extent to which roles and responsibilities are delegated, controlled, and coordinated, as well as how information flows between levels of hierarchy in a company. In EasyFlow, departments should represent the units in the organization, and the employees of each entity (that will work in processes of the company) should be assigned to these departments. Creating the departments and setting the managers (optional) for each department will indicate to who employees should report to when submitting information that needs revision or approval from a supervisor according to the hierarchical organization of the company.
 </p>
 
 <p>
-To manage departments log in to ProcessMaker with a user, such as the “admin”, who has the PM_USERS permission in their role. Then go to Admin &gt; Users &gt; Departments to see a list of the departments and the number of users assigned to them.
+To manage departments go to to user admin screen and click on the department tab
 </p>
 
 <p>
 For departments, take into account the following:
 </p>
 <ul>
-<li class="level1"><div class="li"> Users can only be assigned to one department, unlike groups where users can be assigned to one or more groups.</div>
+<li class="level1"><div class="li"> Users can only be assigned to one department.</div>
 </li>
-<li class="level1"><div class="li"> Departments can not be assigned to tasks in their assignment rules.</div>
+<li class="level1"><div class="li"> Departments can not be assigned to tasks.</div>
 </li>
-<li class="level1"><div class="li"> Processes in ProcessMaker work with departments in the assignment of the next task using the “Reports To” assignment method. In this method the next task is assigned to the immediate supervisor of the employee that worked the last task.</div>
-</li>
-<li class="level1"><div class="li"> The manager of a department is automatically set in the Reports to field for all the other users in the department. If the department is a top-level department (meaning that it has no parent department), then the Reports to field for the manager will be left blank. If the department has a parent department, then the manager&#039;s Reports to field will be set to the manager of the parent department.</div>
+<li class="level1"><div class="li"> If a step fails validation then the department manager will have to approve the step.</div>
 </li>
 </ul>
 
 </div>
-<!-- EDIT5 SECTION "Departments" [6215-8139] -->
+<!-- EDIT5 SECTION "Departments" [5962-7079] -->
 <h1 class="sectionedit6" id="creating_a_new_department">Creating a New Department</h1>
 <div class="level1">
 
@@ -215,7 +211,7 @@ To create a new department, click on the New button. Enter the name of the new d
 </p>
 
 </div>
-<!-- EDIT6 SECTION "Creating a New Department" [8140-8324] -->
+<!-- EDIT6 SECTION "Creating a New Department" [7080-7264] -->
 <h1 class="sectionedit7" id="assigning_users">Assigning Users</h1>
 <div class="level1">
 
@@ -224,4 +220,4 @@ To assign users to a department, go to Admin &gt; Users &gt; Departments to view
 </p>
 
 </div>
-<!-- EDIT7 SECTION "Assigning Users" [8325-] -->
+<!-- EDIT7 SECTION "Assigning Users" [7265-] -->

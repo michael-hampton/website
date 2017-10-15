@@ -1,25 +1,26 @@
-16.3Calendars
-Calendars allow process designers to specify the hours and days when users are expected to be at work, so that the due dates for tasks can be more accurately calculated with Timing Controls. They also allow holidays to be specified, so those days are excluded when calculating the due date. Different calendars can be created for different needs. For instance, a calendar can be created that only includes workdays, but not holidays or weekends, which is useful for calculating salaries.
+**Calendars**
+ Calendars allow the user to specify which hours and days the users are expected to be at work, so that the due dates for tasks can be more accurately calculated with Timing Controls. They also allow holidays to be specified, so those days are excluded when calculating the due date. 
+
 Calendars can be created for specific processes, tasks and users. Therefore, processes can use different calendars when calculating due dates for their tasks. Likewise, users in different sections or regions of an organization can use different calendars.
 
-16.4Setting up Calendars
-As shown in the image below, the Calendar configuration has been split into four parts:
+__**__**Setting up Calendars
+__**As shown in the image below, the Calendar configuration has been split into four parts:
 
 {{:calendar.png?nolink&400|}}
 
 The four categories are:
 Calendar Definition: This section includes three fields that help define the purpose of the calendar:
-  * oName: A label to identify the calendar. This text should be short yet descriptive.
-  * oDescription: A description of the calendar, which should inform the user about the general content or purpose of the calendar.
-  * oActive: Select whether the calendar is enabled or disabled.
-  * Work Days: The days of the week to be included in the calendar can be selected here. To enable the checkboxes to select the days of the week, the option Work Hours must be unchecked:
+  * Name: A label to identify the calendar. This text should be short yet descriptive.
+  * Description: A description of the calendar, which should inform the user about the general content or purpose of the calendar.
+  * Active: Select whether the calendar is enabled or disabled.
+  * Work Days: The days of the week to be included in the calendar can be selected here. To enable the checkboxes to select the days of the week, the option Work Hours must be unchecked:**__Underlined Text____
 
 Work Hours: This group is a table where as many rules as needed can be defined to determine the work hours in each day. The grid has three columns: Day, Start and End.
-  * oDays: This dropdown box includes the seven days and ALL as options to set the day(s) that the work hours apply to.
-  * oStart: This field identifies when the work hours start in the day selected.
-  * oEnd: This field identifies when the work hours end in the day selected.
+  * Days: This dropdown box includes the seven days and ALL as options to set the day(s) that the work hours apply to.
+  * Start: This field identifies when the work hours start in the day selected.
+  * End: This field identifies when the work hours end in the day selected.
 
 Holidays: This group is a table where the holidays in the calendar can be defined. This grid has three fields: Name, Start, End.
-  * oName: A label identifies the name of the holiday.
-  * oStart: This field identifies the starting date of the holiday.
-  * oEnd: This field identifies the end date of the holiday.
+  * Name: A label identifies the name of the holiday.
+  * Start: This field identifies the starting date of the holiday.
+  * End: This field identifies the end date of the holiday.

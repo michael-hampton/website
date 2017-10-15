@@ -1,22 +1,23 @@
 **Report Tables**
 
-The information entered into form fields and case variables are JSON arrays, which are not easy to access with database queries. Report Tables are designed to export the data from the workflow database, so that data can be easily accessed by standard SQL queries or external applications.
-Each time a new case is created, another record will be added to the Report Table. That record will be updated each time a form is submitted in the case.
+The application data that is entered in forms and case variables are stored as JSON arrays in Mysql tables. JSON support in Mysql is still limited and therefore manipulating data through queries can sometimes be difficult.  Report Tables are designed to take data  and store it in custom built report tables and individual columns, so that data can be easily accessed by standard SQL queries.
+
+Each time a new case is created, providing a report table has been configured for the workflow, another record will be added to the Report Table. That record will be updated each time a form is submitted in the case.
 
 {{:reporttable.png?nolink&400|}}
 
-  * oTable Name: Enter the name of the Report Table.
-  * oDescription: Enter a brief description about the report table content.
-  * oType: Select what type of form will be exported to the report table.
+  * Table Name: Enter the name of the Report Table.
+  * Description: Enter a brief description about the report table content.
+  * Type: Select what type of form will be exported to the report table.
   * 
   * Global: Export data stored in variables used by form fields and/or any case variables defined in triggers. This option allows individual variables to be selected for export.
   * After selecting this option, select which fields will be exported.
   * 
   * Besides the fields selected by the user, three system variables fields are included by default to know what case is related to which field values
-  * oAPP_UID: The case unique ID. This value is useful to obtained the case information. This field can NOT be removed from the report table.
-  * oAPP_STATUS: The case status. This field can be removed from the report table if desired.
+  * APP_UID: The case unique ID. This value is useful to obtained the case information. This field can NOT be removed from the report table.
+  * APP_STATUS: The case status. This field can be removed from the report table if desired.
   * DB Connection: Select the database connection where the new report table will be stored.
-  * Workflow: The report table will be stored in the projects database of the current workspace.
+
 
 **Viewing Data of a Report Table**
 To view the data stored in a Report Table, click on the Report Tables tab 
@@ -28,12 +29,13 @@ Select a report table from the list and click on the View button. A window will
 
 {{:table3.png?nolink&400|}}
 
-16.7Deleting Report Tables
+**Deleting Report Tables**
 To delete a Report Table, open the process and click on the Report Tables tab. Click on the Delete button of the Report Table to remove it from the list and delete its table in the projects database.
-16.8Importing Report Tables
+
+**Importing Report Tables**
 To import a Report Table, click on the Report Tables tab and the list of Report Tables available will display. Select one and click on the Upload option, a window will open, click on the file button to select a Report Table from the computer.
 
 {{:table4.png?nolink&400|}}
 
-16.9Exporting Report Tables
+**Exporting Report Tables**
 oTo export a Report Table, click on the Report Tables tab and the list of Report Tables available will display. Select the one to be exported and click on Export. 

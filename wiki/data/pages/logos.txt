@@ -1,6 +1,6 @@
 **Logos**
 
-By default, ProcessMaker appears with its logo at the top of the screen. This logo can easily be replaced with the logo of your business or organization. Logos are displayed as a photo gallery each one as a thumbnail make easy the process to upload, delete or select a new logo.
+This screen allows multiple logos to be uploaded so that they can be used within the system and documentation. All logos are shown in a photo gallery and can be deleted or selected.
 
 **Uploading new logos**
 EasyFlow supports the image formats JPEG, PNG and GIF. All images will be converted into a JPEG image with a height of 80 pixels, so some distortion of the images may occur due to conversion or scaling. To upload a new logo, click on Browse and select an image file. Then click on Upload to add the image to the list a available images which can be used as logos for the Easyflow application.

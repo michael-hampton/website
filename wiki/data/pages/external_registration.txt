@@ -1,0 +1,5 @@
+**External Registration**
+
+The External Registration allows a user outside of the application to complete and submit a form which on successful validation will create the new user in the application. When the user registration is completed an email will sent to the user's account. The user will receive information about how they can activate their account for the first time. Once the account has been activated they will be able to log in to the application and perform their duties. Permissions will need to be setup manually for the new user.
+
+{{:externalreg.png?nolink&400|}}

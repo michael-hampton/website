@@ -1,0 +1,7 @@
+a:2:{s:7:"current";a:7:{s:4:"date";a:2:{s:7:"created";i:1508076110;s:8:"modified";i:1508076110;}s:7:"creator";s:15:"Michael Hampton";s:4:"user";s:4:"mike";s:11:"last_change";a:8:{s:4:"date";i:1508076110;s:2:"ip";s:3:"::1";s:4:"type";s:1:"C";s:2:"id";s:11:"ftp_monitor";s:4:"user";s:4:"mike";s:3:"sum";s:7:"created";s:5:"extra";s:0:"";s:10:"sizechange";i:481;}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:11:"description";a:1:{s:8:"abstract";s:408:"FTP Monitor
+
+The FTP Monitor connects to a specified FTP Server and downloads CSV files from a given directory. 
+
+Each CSV file will contain the required information required to complete the task (as if the user was filling out a form)
+
+For each valid csv file found a new case will be created and will be routed to the second task of the process. The file is stored in the new case as an input document. The";}s:8:"relation";a:1:{s:10:"firstimage";s:0:"";}}s:10:"persistent";a:4:{s:4:"date";a:1:{s:7:"created";i:1508076110;}s:7:"creator";s:15:"Michael Hampton";s:4:"user";s:4:"mike";s:11:"last_change";a:8:{s:4:"date";i:1508076110;s:2:"ip";s:3:"::1";s:4:"type";s:1:"C";s:2:"id";s:11:"ftp_monitor";s:4:"user";s:4:"mike";s:3:"sum";s:7:"created";s:5:"extra";s:0:"";s:10:"sizechange";i:481;}}}

@@ -1,17 +1,8 @@
 **Overview**
 
-Actions by Email is a feature available in the EasyFlow Enterprise Edition. This feature allows users to receive an email where they can send information to EasyFlow cases and also route those cases onto the next task in the process. The email can contain a link to a form stored on the EasyFlow server to be filled out and submitted, a group of links that can be clicked to accept or reject information in the email, or multiple different options customized by the designer. Actions by Email was originally created to allow people who are not registered users in EasyFlow to work on cases, but it can also be used by registered users who wish to work on cases without having to log into the EasyFlow interface.
+Actions by Email is a feature available in the EasyFlow Enterprise Edition. This allows users to build interactive emails which enables the recipient to complete tasks within a worklfow and can move tasks on to the next task in the workflow by clicking on an accept or reject button in the email.
 
-It comprises three options:
+It comprises two options:
 
-  * Link to fill a form: A link to a form is sent to the user's email. When the user submits the form, it saves any data entered into the form and routes the case to the next task in the process.
-  * Use a field to generate actions links: The user will be able to approve or reject the information sent via email. It routes the case onto the next task depending on the link that the user clicked in the email.
-  * Custom actions: This option gives designers the ability to add and customize the response options sent to users in the email by adding css code to each of these options.
-
-**How the Feature Works**
-
-This feature allows an email to be sent in the following cases:
-
-  * By sending an email to the user's inbox where the information of the DynaForm will be linked.
-  * By sending a field or fields as a link to the user's mail in order to approve or reject the information.
-  * By sending one or more customized options (note that these options are customized by using css code to highlight them).
+  * A form to fill in and complete which will move the case to the next task on successful validation.
+  * A group of buttons where the user can approve or reject the information sent via email. It routes the case onto the next task depending on the link that the user clicked in the email.

@@ -4,19 +4,22 @@
 </p>
 
 <p>
-The information entered into form fields and case variables are JSON arrays, which are not easy to access with database queries. Report Tables are designed to export the data from the workflow database, so that data can be easily accessed by standard SQL queries or external applications.
-Each time a new case is created, another record will be added to the Report Table. That record will be updated each time a form is submitted in the case.
+The application data that is entered in forms and case variables are stored as JSON arrays in Mysql tables. JSON support in Mysql is still limited and therefore manipulating data through queries can sometimes be difficult.  Report Tables are designed to take data  and store it in custom built report tables and individual columns, so that data can be easily accessed by standard SQL queries.
+</p>
+
+<p>
+Each time a new case is created, providing a report table has been configured for the workflow, another record will be added to the Report Table. That record will be updated each time a form is submitted in the case.
 </p>
 
 <p>
 <img src="/site/wiki/lib/exe/fetch.php?w=400&amp;tok=4a0637&amp;media=reporttable.png" class="media" alt="" width="400" />
 </p>
 <ul>
-<li class="level1"><div class="li"> oTable Name: Enter the name of the Report Table.</div>
+<li class="level1"><div class="li"> Table Name: Enter the name of the Report Table.</div>
 </li>
-<li class="level1"><div class="li"> oDescription: Enter a brief description about the report table content.</div>
+<li class="level1"><div class="li"> Description: Enter a brief description about the report table content.</div>
 </li>
-<li class="level1"><div class="li"> oType: Select what type of form will be exported to the report table.</div>
+<li class="level1"><div class="li"> Type: Select what type of form will be exported to the report table.</div>
 </li>
 <li class="level1"><div class="li"> </div>
 </li>
@@ -28,13 +31,11 @@ Each time a new case is created, another record will be added to the Report Tabl
 </li>
 <li class="level1"><div class="li"> Besides the fields selected by the user, three system variables fields are included by default to know what case is related to which field values</div>
 </li>
-<li class="level1"><div class="li"> oAPP_UID: The case unique ID. This value is useful to obtained the case information. This field can NOT be removed from the report table.</div>
+<li class="level1"><div class="li"> APP_UID: The case unique ID. This value is useful to obtained the case information. This field can NOT be removed from the report table.</div>
 </li>
-<li class="level1"><div class="li"> oAPP_STATUS: The case status. This field can be removed from the report table if desired.</div>
+<li class="level1"><div class="li"> APP_STATUS: The case status. This field can be removed from the report table if desired.</div>
 </li>
 <li class="level1"><div class="li"> DB Connection: Select the database connection where the new report table will be stored.</div>
-</li>
-<li class="level1"><div class="li"> Workflow: The report table will be stored in the projects database of the current workspace.</div>
 </li>
 </ul>
 
@@ -57,9 +58,12 @@ Select a report table from the list and click on the View button. A window will
 </p>
 
 <p>
-16.7Deleting Report Tables
+<strong>Deleting Report Tables</strong>
 To delete a Report Table, open the process and click on the Report Tables tab. Click on the Delete button of the Report Table to remove it from the list and delete its table in the projects database.
-16.8Importing Report Tables
+</p>
+
+<p>
+<strong>Importing Report Tables</strong>
 To import a Report Table, click on the Report Tables tab and the list of Report Tables available will display. Select one and click on the Upload option, a window will open, click on the file button to select a Report Table from the computer.
 </p>
 
@@ -68,6 +72,6 @@ To import a Report Table, click on the Report Tables tab and the list of Repor
 </p>
 
 <p>
-16.9Exporting Report Tables
+<strong>Exporting Report Tables</strong>
 oTo export a Report Table, click on the Report Tables tab and the list of Report Tables available will display. Select the one to be exported and click on Export. 
 </p>

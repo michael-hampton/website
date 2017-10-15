@@ -28,3 +28,10 @@ process_categories
 case_tracker
 actions_by_email
 managing_users
+wiki:dokuwiki
+multiple_file_upload
+ftp_monitor
+external_registration
+case_archive_and_restore
+data_reporting_tools
+batch_routing

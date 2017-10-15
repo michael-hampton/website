@@ -1,23 +1,20 @@
 **Overview**
 
-The Case Tracker generates a PIN that allows an external user to log into ProcessMaker and review the advances of a given case. The external user can check:
+The Case Tracker allows an external user to log into ProcessMaker and review the progress and information of a case. The external user can check:
 
   * Where the case is. (Completed tasks, Pending tasks/Not executed and Tasks in progress)
   * A summary of the derivations and information related to the specific case.
   * Case History.
   * Message History.
 
-In this new window several options will appear. Like shown in the image below, the Case Tracker defines what kind of information the external user should be able to view. The external user can see either the whole Process Map or only defined stages of the process. Likewise the external user can have access to the routing history or message history, or both.
+In this new window several options will appear. Like shown in the image below, the Case Tracker defines what kind of information the external user should be able to view. The external user can see either the whole workflow or only defined stages of the workflow. Likewise the external user can have access to the routing history or message history, or both.
 
 {{:tracker.png?nolink&400|}}
 
 Case Tracker Properties
 
-If the user decides to show the "Processmap" then click on the checkbox. "Processmap" will show information about Pending/Not Executed tasks, Completed tasks, and Tasks in progress. Users can track information about where the case is and about case forms and documents. The Case History is also displayed, if the Routing History option is checked. The Message History is displayed if the Message History option is checked. If the checkbox is unchecked the users cannot see the "Processmap", but they can track information about Case Forms and Documents.
+Users can track information about where the case is and about case forms and documents. 
 
-Checking the "Routing History" checkbox lets the user see where the case is and the routing history- the tasks and sub-processes that have been completed and who worked on them.
-
-When the "Message History" checkbox is clicked, the messages that were went during the execution of the case will be received.
 
 Case Tracker Objects
 
